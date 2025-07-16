@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+ <!-- Meta tags de humor -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO real -->
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Confira imagens engraçadas para dar boas risadas! Humor visual leve, divertido e criativo.">
+  <meta name="keywords" content="imagens engraçadas, memes, humor, diversão, risadas">
+  <meta name="author" content="VictorXX">
+  <meta name="language" content="pt-br">
+  <meta name="revisit-after" content="7 days">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Vamos rir! Imagens engraçadas para seu dia">
+  <meta property="og:description" content="Uma seleção de imagens engraçadas que vão alegrar seu dia. Clique e veja!">
+  <meta property="og:image" content="https://i.pinimg.com/236x/fb/f0/27/fbf027d8b7aed45d175f3bbdce51a598.jpg">
+  <meta property="og:url" content="https://victorxx.github.io/carros01gith/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Imagens engraçadas para dar boas risadas">
+  <meta name="twitter:description" content="Dê uma pausa e divirta-se com essas imagens engraçadas selecionadas a dedo.">
+  <meta name="twitter:image" content="https://i.pinimg.com/236x/fb/f0/27/fbf027d8b7aed45d175f3bbdce51a598.jpg">
+
+  <!-- Meta tags de humor (easter egg 😄) -->
+  <meta name="generator" content="Magia, sarcasmo e um pouco de sorte.">
+  <meta name="coffee" content="required">
+  <meta name="developer" content="100% humano (ou quase)">
+  <meta name="unicorn" content="real">
+  <meta name="dignity" content="missing">
+  <meta name="mood" content="debug mode forever">
+  <title>Vamos rir confira essas imagens engraçadas</title>
+  <style>
+    #carrega {
+      width: 100%;
+      height: 150px;
+      font-size: 50px;
+      background-color: purple;
+      cursor: pointer;
+      border: none;
+    }
+
+    #imagens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    iframe {
+      width: 600px;
+      height: 500px;
+      border: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="imagens"></div>
+  <button id="carrega">Carregar</button>
+
+  <script>
+    const campoimagem = document.getElementById('imagens');
+    const carrega = document.getElementById('carrega');
+
+    const imagens = [
+      "https://i.pinimg.com/75x75_RS/61/eb/36/61eb3601fc9075228e6eeb6700b46e6f.jpg","https://i.pinimg.com/236x/ee/7d/8b/ee7d8b292e39b9209e863b59c933beb1.jpg","https://i.pinimg.com/236x/7e/1a/b7/7e1ab75ee808752a8e2d194f34293592.jpg","https://i.pinimg.com/236x/1b/cc/aa/1bccaa301b2dc57b2eeecc2c885a76e0.jpg","https://i.pinimg.com/236x/28/08/e5/2808e56c66fbebf5045e99e30a9ece44.jpg","https://i.pinimg.com/236x/b7/eb/6a/b7eb6a0eb7330dcf8c9cb5bbf294773b.jpg","https://i.pinimg.com/236x/e9/f0/b3/e9f0b398876ed55674606e3620631a30.jpg","https://i.pinimg.com/236x/4b/70/8a/4b708a3161e1597aee69b289ad9d93fd.jpg","https://i.pinimg.com/236x/53/de/0a/53de0aa746e620f6b4f324cee409e93f.jpg","https://i.pinimg.com/236x/52/42/a5/5242a5cc0c8304f58d4e00e20890cf2a.jpg","https://i.pinimg.com/236x/b5/b0/7b/b5b07b84158edf0bc40d8d4bc252bcac.jpg","https://i.pinimg.com/236x/62/b4/9d/62b49d6cf9bbe9d7133ddd9a72bcf4eb.jpg","https://i.pinimg.com/236x/ab/fe/cb/abfecbee178897cb52a2617641ed702d.jpg","https://i.pinimg.com/236x/71/1d/da/711dda433d0ec5068b72abd36e04b227.jpg","https://i.pinimg.com/236x/22/d7/7a/22d77a2c5234420824181888d1d3e4a9.jpg","https://i.pinimg.com/236x/c8/e1/d0/c8e1d082ce3da4eb54393342c676ffa8.jpg","https://i.pinimg.com/236x/49/b3/6a/49b36a6a446a241c22161fe770e0c1cf.jpg","https://i.pinimg.com/236x/f1/84/73/f184730b146e4c7af4e5661bef300314.jpg","https://i.pinimg.com/236x/fb/f0/27/fbf027d8b7aed45d175f3bbdce51a598.jpg","https://i.pinimg.com/236x/7f/93/62/7f9362f02b600c6d8a62f116d7e53e57.jpg","https://i.pinimg.com/236x/f0/b9/cb/f0b9cb2fae22e83be78843d12b7b3cb3.jpg","https://i.pinimg.com/236x/39/76/38/397638d612e8e414b55ad1009a8f9bb0.jpg","https://i.pinimg.com/236x/62/18/94/621894c242856c6d6243af083e394d62.jpg"
+      ,
+      "https://i.pinimg.com/75x75_RS/01/02/94/0102948ee80329e60e895d106420b5a5.jpg",
+      "https://i.pinimg.com/236x/ad/fa/30/adfa30c9165c928dbfd9b1e751467d14.jpg",
+      "https://i.pinimg.com/236x/23/93/2f/23932fdf368bdbe2d7ec8434853970e0.jpg",
+      "https://i.pinimg.com/236x/92/ea/f8/92eaf83b067627461bddb02882282e7a.jpg",
+      "https://i.pinimg.com/75x75_RS/01/02/94/0102948ee80329e60e895d106420b5a5.jpg","https://i.pinimg.com/236x/ad/fa/30/adfa30c9165c928dbfd9b1e751467d14.jpg","https://i.pinimg.com/236x/23/93/2f/23932fdf368bdbe2d7ec8434853970e0.jpg","https://i.pinimg.com/236x/14/6a/af/146aaf424b332fa9a548be41346f9615.jpg","https://i.pinimg.com/236x/54/6c/9d/546c9d75f8932b6862e3840fac696c77.jpg","https://i.pinimg.com/236x/db/3f/a6/db3fa688a1c718981db25fc2bca40739.jpg","https://i.pinimg.com/236x/9b/79/54/9b7954d5ad51d9f1445f852b9759a1ce.jpg","https://i.pinimg.com/236x/85/d0/ad/85d0adcf93c9dc3be0b463d581e57f3a.jpg","https://i.pinimg.com/236x/8f/f3/a9/8ff3a9712d20c617dc050c5f3eaf8580.jpg","https://i.pinimg.com/236x/fe/65/26/fe65261904b6b2fc21dc691f8a8f2529.jpg","https://i.pinimg.com/236x/e3/64/54/e364542c7ae561838a556cae50e979b0.jpg","https://i.pinimg.com/236x/fc/d2/19/fcd219f5d32aa9dde7997bc94666c3b2.jpg","https://i.pinimg.com/236x/b7/a2/18/b7a218a1578275daed194a2aa22f3b2d.jpg","https://i.pinimg.com/236x/42/a8/e1/42a8e1ec85111dd725cdbd65e76cb078.jpg","https://i.pinimg.com/236x/55/3e/04/553e0472fbf5e4631186e3cb8c5dd9fa.jpg","https://i.pinimg.com/236x/88/72/1c/88721cec426744ce40eee57c5c0a5e6e.jpg","https://i.pinimg.com/236x/6d/65/4f/6d654f199262857fb37a065f75be28cf.jpg","https://i.pinimg.com/236x/f8/3f/14/f83f14aefa265254c0411fc9f01247cf.jpg","https://i.pinimg.com/236x/c7/72/ce/c772ced3ef3c246699c6e767fc561bfc.jpg","https://i.pinimg.com/236x/84/2d/81/842d8130014740286432b02c61c2a0f5.jpg","https://i.pinimg.com/236x/49/db/e3/49dbe3ef19659b7de15eabdfcd54c5da.jpg","https://i.pinimg.com/236x/4a/2d/96/4a2d96415c762f534a46ab0fb9ce8930.jpg","https://i.pinimg.com/236x/08/f5/45/08f545a464ed63326e7426ffab1dbaf7.jpg","https://i.pinimg.com/236x/ac/11/f9/ac11f9c2b9a72d374249209acaf8c9ed.jpg","https://i.pinimg.com/236x/8c/f2/37/8cf237456edd6310dd899096763b6001.jpg","https://i.pinimg.com/236x/7b/47/05/7b47059f3db38a8d4e94ad5b4701d231.jpg","https://i.pinimg.com/236x/2d/3e/a6/2d3ea6476f30e4eb60f3c6f3888a8e1f.jpg","https://i.pinimg.com/236x/92/ea/f8/92eaf83b067627461bddb02882282e7a.jpg"
+    ];
+
+    let item = 0;
+    const quantidadePorVez = 1;
+    let contadorPropaganda = 0;
+    const intervaloPropaganda = 3; // Exibe propaganda a cada 3 imagens
+
+    function inserir() {
+      let fim = item + quantidadePorVez;
+
+      for (; item < fim && item < imagens.length; item++) {
+        const img = document.createElement('img');
+        img.src = imagens[item];
+        campoimagem.appendChild(img);
+
+        contadorPropaganda++;
+
+        if (contadorPropaganda === intervaloPropaganda) {
+          inserirPropaganda();
+          contadorPropaganda = 0;
+        }
+      }
+
+      if (item >= imagens.length) {
+        carrega.disabled = true;
+        carrega.textContent = 'Não tem mais nada para carregar';
+        carrega.style.backgroundColor = '#ccc';
+      }
+    }
+
+    function inserirPropaganda() {
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://victorxx.github.io/carros01gith/uteis.html';
+      campoimagem.appendChild(iframe);
+    }
+
+    carrega.addEventListener('click', inserir);
+  </script>
+
+</body>
+</html>
